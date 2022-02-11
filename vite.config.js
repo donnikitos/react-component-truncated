@@ -7,8 +7,7 @@ export default defineConfig({
 	plugins: [react(), styledLib()],
 	build: {
 		lib: {
-			entry: path.resolve(__dirname, 'src/components/LongText/index.tsx'),
-			// formats: ['es'],
+			entry: path.resolve(__dirname, 'src/components/Truncated/index.tsx'),
 			name: 'react-component-truncated',
 			fileName: 'index',
 		},
