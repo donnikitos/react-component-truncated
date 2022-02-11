@@ -1,0 +1,17 @@
+{
+	"compilerOptions": {
+		"baseUrl": ".",
+		"jsx": "react-jsx",
+		// "isolatedModules": true,
+		"declaration": true,
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"target": "ESNext",
+		"moduleResolution": "node",
+		"outDir": "dist",
+		"listEmittedFiles": true
+		// "outFile": "dist/index.d.ts"
+	},
+	"include": ["src"],
+	"exclude": ["src/index.tsx", "dist", "node_modules"]
+}

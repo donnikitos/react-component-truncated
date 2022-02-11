@@ -1,0 +1,65 @@
+{
+	"name": "react-component-truncated",
+	"version": "0.0.1",
+	"description": "Purely stylistic React.JS component to truncate long strings, like crypto addresses or tokens.",
+	"files": [
+		"dist"
+	],
+	"main": "./dist/index.umd.js",
+	"module": "./dist/index.es.js",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"import": "./dist/index.es.js",
+			"require": "./dist/index.umd.js"
+		}
+	},
+	"scripts": {
+		"start": "vite",
+		"build": "vite build && tsc --emitDeclarationOnly",
+		"preview": "vite preview",
+		"clean": "rm -rf dist",
+		"prepack": "npm run clean && npm run build"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/donnikitos/react-component-truncated.git"
+	},
+	"keywords": [
+		"React.js",
+		"React",
+		"react-component",
+		"stylistic",
+		"component",
+		"crypto",
+		"crypto",
+		"addresses",
+		"address",
+		"hash",
+		"long text",
+		"truncated text",
+		"clipped text"
+	],
+	"author": "Nikita 'donnikitos' Nitichevski <me@donnikitos.com> (https://donnikitos.com/)",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/donnikitos/react-component-truncated/issues"
+	},
+	"homepage": "https://github.com/donnikitos/react-component-truncated#readme",
+	"peerDependencies": {
+		"react": "^16.8.0",
+		"react-dom": "^16.8.0"
+	},
+	"devDependencies": {
+		"@types/react": "^17.0.39",
+		"@types/react-dom": "^17.0.11",
+		"@vitejs/plugin-react": "^1.2.0",
+		"postcss": "^8.4.6",
+		"prettier": "^2.5.1",
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2",
+		"sass": "^1.49.7",
+		"typescript": "^4.5.5",
+		"vite": "^2.7.13"
+	}
+}

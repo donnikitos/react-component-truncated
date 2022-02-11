@@ -1,0 +1,37 @@
+.root {
+	display: inline-flex;
+
+	user-select: all;
+
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+
+	div {
+		flex-shrink: 0;
+		flex-grow: 0;
+
+		order: 2;
+
+		user-select: none;
+
+		padding: 0 2px;
+	}
+
+	span {
+		flex-grow: 1;
+		overflow: hidden;
+		text-overflow: clip;
+
+		order: 1;
+
+		white-space: nowrap;
+		word-break: break-all;
+
+		&:last-of-type {
+			order: 3;
+
+			direction: rtl;
+		}
+	}
+}
