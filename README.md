@@ -6,7 +6,8 @@
 </br>
 </br>
 
-![TypeScript](https://img.shields.io/badge/typescript-^_4.4.0-blue?style=for-the-badge)
+![node-current](https://img.shields.io/node/v/react-component-truncated?color=green&style=for-the-badge)
+![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/donnikitos/react-component-truncated/dev/typescript/master?color=blue&style=for-the-badge)
 
 A stylistic component to crop long texts, but still show the beginning and the end.
 Pretty useful to display crypto tokens or crypto addresses and hashes.
