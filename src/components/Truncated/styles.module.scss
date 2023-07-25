@@ -21,11 +21,11 @@
 	}
 
 	span {
+		order: 1;
+
 		flex-grow: 0;
 		overflow: hidden;
 		text-overflow: clip;
-
-		order: 1;
 
 		white-space: nowrap;
 		word-break: break-all;
@@ -35,8 +35,9 @@
 
 			flex-grow: 1;
 
-			direction: rtl;
-			text-align: left;
+			display: inline-flex;
+
+			justify-content: end;
 		}
 	}
 }

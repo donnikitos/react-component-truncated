@@ -6,7 +6,8 @@ type IProps = Omit<HTMLAttributes<HTMLDivElement>, 'children'> & {
 };
 
 function Truncated({ children, className, ...props }: IProps) {
-	const middle = Math.round(children.length / 2);
+	const content = `${children}`;
+	const middle = Math.round(content.length / 2);
 
 	const [mainRef, setMainRef] = useState<null | HTMLElement>(null);
 	const span1Ref = useRef<null | HTMLElement>(null);
@@ -46,8 +47,8 @@ function Truncated({ children, className, ...props }: IProps) {
 			ref={setMainRef}
 			className={`${styles.root} ${className || ''}`}
 		>
-			<span ref={span1Ref}>{children.substring(0, middle)}</span>
-			<span ref={span2Ref}>{children.substring(middle)}</span>
+			<span ref={span1Ref}>{content.substring(0, middle)}</span>
+			<span ref={span2Ref}>{content.substring(middle)}</span>
 			{overflowing && <div>...</div>}
 		</div>
 	);
