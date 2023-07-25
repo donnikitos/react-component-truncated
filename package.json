@@ -1,6 +1,6 @@
 {
 	"name": "react-component-truncated",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Purely stylistic React.JS component to truncate long strings, like crypto addresses or tokens.",
 	"files": [
 		"dist"
